@@ -6,74 +6,24 @@
     <title>Giới thiệu bản thân - Phi Vũ</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
             margin: 0;
             padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
+
+        /* Nền sao lấp lánh */
+        .star {
+            position: fixed;
+            width: 2px;
+            height: 2px;
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p, ul {
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: left;
-        }
-        .avatar {
-            width: 180px;
-            height: 180px;
             border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 4px solid #ddd;
+            opacity: 0.6;
+            animation: blink 2s infinite ease-in-out;
         }
-        .info {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #444;
-        }
-        .footer {
-            margin-top: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
 
-        <!-- Avatar -->
-        <img src="gen-n-z7285700291720_fca5d52e1f01e90eef4a685d474c81f8.jpg" 
-             alt="Avatar" class="avatar">
-
-        <h1>Xin chào, mình là <b>Phi Vũ</b></h1>
-
-        <div class="info">
-            Học sinh lớp <b>12A</b>
-        </div>
-
-        <p>Chào mừng bạn đến với trang giới thiệu bản thân của mình! Đây là nơi mình chia sẻ một chút về bản thân và những sở thích cá nhân.</p>
-
-        <h2>Sở thích</h2>
-        <ul>
-            <li>🎮 Chơi game</li>
-            <li>🎧 Nghe nhạc</li>
-            <li>😴 Ngủ</li>
-        </ul>
-
-        <div class="footer">
-            © 2025 – Thiết kế bởi Phi Vũ 😎
-        </div>
-    </div>
-</body>
-</html>
+        @keyframes blink {
+            0% {
