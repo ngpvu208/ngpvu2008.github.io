@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Avatar</title>
-    <style>
-        body {
-            background-color: #f0f2f5;
-            font-family: Arial, sans-serif;
-        }
-        .header-banner {
-            background-color: #4a90e2;
-            height: 150px;
-            position: relative;
-        }
-        .profile-avatar-container {
-            position: absolute;
-            top: 100px; /* Điều chỉnh để avatar nằm chồng lên header và phần nội dung */
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 50%;
-            padding: 5px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .profile-avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            object-fit: cover; /* Đảm bảo ảnh không bị méo khi cắt thành hình tròn */
-        }
-        .content {
-            margin-top: 60px;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu bản thân - Phi Vũ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74b9ff, #a29bfe);
+      margin: 0;
+      padding: 0;
+      color: #2d3436;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #6c5ce7;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #6c5ce7;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .box {
+      background: #dfe6e9;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-size: 17px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="gen-n-z7285700291720_fca5d52e1f01e90eef4a685d474c81f8.jpg" alt="Avatar" class="avatar" />
 
-<div class="header-banner"></div>
+    <h1>Xin chào, mình là Phi Vũ!</h1>
 
-<div class="profile-avatar-container">
-    <img src="gen-n-z7285700291720_fca5d52e1f01e90eef4a685d474c81f8.jpg" alt="Avatar Người Nhện" class="profile-avatar">
-</div>
+    <p>Mình là một người thích sự thư giãn và luôn tìm kiếm những điều vui vẻ trong cuộc sống. Dưới đây là vài điều về mình:</p>
 
-<div class="content">
-    <h1>Chào mừng!</h1>
-    <p>Đây là trang web với avatar Người Nhện.</p>
-</div>
-
+    <div class="box">
+      <strong>Sở thích:</strong> Chơi game 🎮, nghe nhạc 🎵, ngủ 😴
+    </div>
+  </div>
 </body>
 </html>
